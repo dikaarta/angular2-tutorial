@@ -11,6 +11,7 @@ import { Hero } from './Hero'
                   {{hero.name}}
               </li>
             </ul>
+            <p *ngIf="heroes.length > 3">There are many heroes!</p>
             `
 })
 export class AppComponent  { 
