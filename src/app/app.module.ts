@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 //import { AppComponent }  from './app.component';
 import { ClickMeComponent } from './click-me.component';
-import { KeyUpComponent_V1, KeyUpComponent_V2, KeyUpComponent_V3 } from './keyup.component';
+import { KeyUpComponent_V1, KeyUpComponent_V2, KeyUpComponent_V3, KeyUpComponent_V4 } from './keyup.component';
 import { LoopBackComponent } from './loop-back.component'
 
 @NgModule({
@@ -14,6 +14,7 @@ import { LoopBackComponent } from './loop-back.component'
       KeyUpComponent_V1,
       KeyUpComponent_V2,
       KeyUpComponent_V3,
+      KeyUpComponent_V4
       LoopBackComponent
      ],
   bootstrap:    [ //AppComponent, 
@@ -21,6 +22,7 @@ import { LoopBackComponent } from './loop-back.component'
   KeyUpComponent_V1,
   KeyUpComponent_V2,
   KeyUpComponent_V3,
+  KeyUpComponent_V4
   LoopBackComponent]
 })
 export class AppModule { }
