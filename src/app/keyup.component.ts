@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class KeyUpComponent_V1{
     values = '';
 
-    onKey(event: any){
-        this.values += event.target.value + ' |';
+    onKey(event: KeyboardEvent){
+        this.values += (<HTMLInputElement>event.target).value + ' |';
     }
 }
