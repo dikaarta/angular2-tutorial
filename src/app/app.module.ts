@@ -1,31 +1,19 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 
-//import { AppComponent }  from './app.component';
-import { ClickMeComponent } from './click-me.component';
-import { KeyUpComponent_V1, KeyUpComponent_V2, KeyUpComponent_V3, KeyUpComponent_V4 } from './keyup.component';
-import { LoopBackComponent } from './loop-back.component'
-import { LittleTourComponent } from "./little-tour.component"
+import { AppComponent }  from './app.component';
+import { HeroFormComponent } from './hero-form.component' 
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ 
-      //AppComponent,
-      ClickMeComponent,
-      KeyUpComponent_V1,
-      KeyUpComponent_V2,
-      KeyUpComponent_V3,
-      KeyUpComponent_V4,
-      LoopBackComponent,
-      LittleTourComponent
+  imports:      [ 
+    BrowserModule,
+    FormsModule
      ],
-  bootstrap:    [ //AppComponent, 
-  ClickMeComponent,
-  KeyUpComponent_V1,
-  KeyUpComponent_V2,
-  KeyUpComponent_V3,
-  KeyUpComponent_V4,
-  LoopBackComponent, 
-  LittleTourComponent]
+  declarations: [ 
+      AppComponent,
+      HeroFormComponent
+     ],
+  bootstrap:    [ AppComponent, ]
 })
 export class AppModule { }
